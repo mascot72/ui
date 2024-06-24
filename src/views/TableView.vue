@@ -1,4 +1,16 @@
 <template>
+
+<div class="container">
+	<div>TABLE LIST TOP</div>
+	<div class="filter-zone">
+		<div class="form-wrap">
+			<div class="form-item">예제 1.</div>
+			<div class="form-item" label="Name"><input type="text"></div>
+			<div class="form-item" label="Pet"><select name="pets" class="pet-select"></select></div>
+			<div class="form-item" label="password"><input type="password"></div>
+      <div class="form-item"><button type="button">Click</button></div>
+		</div>
+  </div>
   <div>
     <!-- <VueGoodTable :columns="columns" :rows="rows" /> -->
     <vue-good-table
@@ -14,6 +26,7 @@
       }"
     >
     </vue-good-table>
+  </div>
   </div>
   <div>
   <h1>Latest Vue Core Commits</h1>
