@@ -1,0 +1,144 @@
+﻿<div class="container">
+	<div>TABLE LIST TOP</div>
+	<div class="filter-zone">
+		<div class="wrap">
+			<div class="item">예제 1.</div>
+			<div class="item">BbbbBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+			<div class="item"><input type="text"></div>
+			<div class="item"><select name="pets" class="pet-select"></select></div>
+			<div class="item">E e E e E e</div>
+		</div>
+		<div class="wrap">
+			<div class="item">예제 2. BBBBBBBBBBBBBBBBBBBBBB</div>
+			<div class="item"><input type="text" placeholder="Please input Data:"></div>
+			<div class="item"><button>Click</button></div>
+			<div class="item">Bbbb BBBBBBBBBBBBBBBBBBBBBB</div>
+			<div class="item">Bbbb BBBBBBBBBBBBBBBBBBBBBB</div>
+			<div class="item">C C C C C</div>
+			<div class="item">DDDDDDDDDDDDDDDDDDDDDD</div>
+			<div class="item">C C C C C</div>
+			<div class="item">DDDDDDDDDDDDDDDDDDDDDD</div>
+			<div class="item">
+				<select name="pets" class="pet-select">
+					<option value="">--Please choose an option--</option>
+					<option value="dog">Dog</option>
+					<option value="cat">Cat</option>
+					<option value="hamster">Hamster</option>
+					<option value="parrot">Parrot</option>
+					<option value="spider">SpiderSpiderSpiderSpiderSpider</option>
+					<option value="goldfish">Goldfish</option>
+				</select>
+		</div>
+	</div>
+</div>
+<div>TABLE LIST BOTTOM</div>
+</div>
+<div class="form-wrap">
+	<div>예제 3.</div>
+	<div class="form-item" label="전화번호">
+		<input type="text" mask="phone">
+	</div>
+	<div class="form-item" label="구입가격">
+		<input type="text">
+	</div>
+	<div class="form-item" label="계정정보">
+		<input type="text">
+	</div>
+	<div class="form-item input-side-margin" label="서비스명">
+		<input type="text">
+	</div>
+	<div class="form-item" label="계정ID">
+		<input type="text">
+	</div>
+</div>
+
+<style>
+	* {
+		background-color: black;
+		color: white;
+	}
+	
+	div {
+		border-top: 1px solid bluesky;
+		border-bottom: 1px solid rgb(47, 161, 255);
+		/* padding: 10px; */
+	}
+	.filter-zone {
+		display: flex;
+		justify-content: center;
+		padding: 40px 0;	/* Filter영역의 위아래 여백 */
+		flex-wrap: wrap;
+	}
+	.wrap {
+		/* 첫번째 Filter 예제 */
+		/* width: 500px; */
+		border: 1px solid yellow;
+		display: inline-flex;
+		justify-content: center;
+	  align-items: center;
+		flex-wrap: wrap;
+		gap:8px;
+		
+		/* 두번째 Filter 예제 */
+		&:nth-child(2) {
+			display: flex;
+			
+			border: 1px solid rgb(255, 0, 128);
+			margin-top: 20px;
+
+			/* width: 600px; */
+			/* height: 300px; */
+			justify-content: space-evenly;
+			align-items: center;
+			align-content: center;
+			Z-INDEX: 1;
+			/* gap: 8px; */
+		}
+	}
+	.item {
+		/* border: 1px solid pink; */
+		/* flex-basis: 40%; */	/* 2 column으로 설정시 */
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+
+	/* 입력속성 필요시 */
+	input,button,select {
+		width: 100%;
+		height: 25px;
+		border: 1px solid gray;
+    border-radius: 4px;
+	}
+
+	.form-wrap {
+		display: flex;
+		justify-content: center;
+		/* column-gap: 8px; */
+		align-items: center;
+	}
+	.form-item {
+		/* position: relative; */
+		min-height: 10px;
+		max-width: 360px;
+	
+		&&::before {
+			content: attr(label);
+			left: 0px;
+			top: 0px;
+			font-size: 12px;
+			padding-top: 20px;
+			padding-bottom: 4px;
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	/* 입력폼에서 단독으로 사잇값 적용시 */
+	.input-side-margin {
+		margin-right: 8px;
+	}
+</style>
+<script>
+	// $input-side-margin = margin-right(자신에 세팅) | gap 으로 준다.(부모에 세팅)
+	// form-field, search-field 내부에 input요소를 넣으면 적용 되도록 한다.
+
+</script>
