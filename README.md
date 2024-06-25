@@ -1,10 +1,4 @@
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-# ui
-UI Template exam
-=======
->>>>>>> Stashed changes
+
 # vue-project
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -50,7 +44,3 @@ yarn test:unit
 ```sh
 yarn lint
 ```
-<<<<<<< Updated upstream
-=======
->>>>>>> cabb6af (first)
->>>>>>> Stashed changes
